@@ -1,0 +1,12 @@
+export(
+    qqPlotFast,
+    qqPlotPrepare,
+    manPlotPrepare,
+    manPlotFast
+)
+
+importFrom("grDevices", "palette")
+importFrom("graphics", "abline", "axis", "legend", "lines", "points")
+importFrom("stats", "qbeta", "qchisq")
+importFrom("utils", "head", "tail")
+importFrom(stringr, str_sort)
