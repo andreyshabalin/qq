@@ -61,9 +61,9 @@ qqPlotFast = function(
             col.band = "#ECA538",
             makelegend = TRUE,
             xlab = expression(
-                paste("\u2013", " log"[10]*"(", italic("P"), "), null")),
+                paste("-", " log"[10]*"(", italic("P"), "), null")),
             ylab = expression(
-                paste("\u2013", " log"[10]*"(", italic("P"), "), observed"))
+                paste("-", " log"[10]*"(", italic("P"), "), observed"))
         ){
     
     # Get compact summary of p-values for QQ-plot
