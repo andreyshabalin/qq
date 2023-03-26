@@ -23,9 +23,9 @@ qqPlotPrepare = function(pvalues, ntests = NULL, ismlog10 = FALSE){
     
     if( length(ypvs) > 1000 ){
         # need to filter a bit, make the plotting faster
-        levels = as.integer( (xpvs - xpvs[1])/(tail(xpvs,1) - xpvs[1]) * 2000);
+        levels = as.integer( (xpvs - xpvs[1])/(tail(xpvs,1) - xpvs[1]) * 1000);
         keep = c(TRUE, diff(levels)!=0);
-        levels = as.integer( (ypvs - ypvs[1])/(tail(ypvs,1) - ypvs[1]) * 2000);
+        levels = as.integer( (ypvs - ypvs[1])/(tail(ypvs,1) - ypvs[1]) * 1000);
         keep = keep | c(TRUE, diff(levels)!=0);
         keep = which(keep);
         ypvs = ypvs[keep];
