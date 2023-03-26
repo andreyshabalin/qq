@@ -257,7 +257,7 @@ manPlotFast = function(
         yaxs = "i",
         xlab = "Chromosome",
         ylab = expression(
-            paste("\u2013", " log"[10]*"(", italic("P"), "), observed")),
+            paste("-", " log"[10]*"(", italic("P"), "), observed")),
         axes = FALSE);
     axis(
         side = 1,
